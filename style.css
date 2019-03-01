@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.menu-nav {
+  background-color: #f3f1f1;
+  display: flex;
+  padding: 30px 50px;
+  position: relative;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.menu-nav li {
+  list-style: none;
+  margin-right: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-nav li:hover {
+  font-weight: 600;
+}
+
+.button {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  padding: 15px 45px;
+  background-color: #ff8902;
+  position: absolute;
+  right: 70px;
+  top: 15px;
+}
+
+/* TOP BAR */
+
+.topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeecec;
+  padding: 20px 20px;
+}
+
+.topbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.topbar-inf {
+  flex: 1;
+}
+
+.topbar-title {
+  font-size: 55px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.topbar-slogan {
+  font-family: "Montserrat", sans-serif;
+  color: #ff8902;
+}
+
+.topbar-title,
+.topbar-slogan {
+  display: flex;
+  justify-content: center;
+}
+
+.topbar-btn {
+  flex: 1;
+}
+
+.topbar-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.main-image {
+  background-image: url("img/main-img.png");
+  background-size: cover;
+  height: 700px;
+  width: 400px;
+
+  -webkit-box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
+  -moz-box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
+  box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
+}
+
+/* PLANSZA STRARTOWA - CO TO, DLA KOGO */
+
+.section-start {
+  background-color: #91e9da;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.section-start-title {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-start-field {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.section-start-content {
+  width: 30vh;
+  height: 30vh;
+  margin: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-start-content p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.board-icon {
+  color: #ff8902;
+  font-size: 70px !important;
+}
+
+.for-whom {
+  background-color: #e6e3e3;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+.section-arrow {
+  color: black !important;
+  font-size: 30px !important;
+}
+
+/* PLANSZE O PERSONACH */
+
+.section-overlay {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 50px 0;
+}
+
+.section-overlay-persona1 {
+  background-color: #eeecec;
+}
+
+.section-overlay-persona2 {
+  background-color: #d6d6d6;
+}
+
+.section-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content-persona2 {
+  align-items: flex-end;
+}
+
+.section-field {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 70%;
+  padding: 80px 0;
+}
+
+.section-queries {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  margin-bottom: 55px;
+}
+
+.section-description {
+  font-size: 15px;
+  padding: 20px 30px;
+}
+
+.section-queries li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.section-title-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ff7402;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.slogan {
+  color: #000000da;
+  font-size: 38px;
+}
+
+.screen-image1,
+.screen-image2,
+.screen-image3 {
+  background-size: cover;
+  width: 300px;
+  height: 550px;
+
+  -webkit-box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
+  -moz-box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
+  box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
+}
+
+.screen-image1 {
+  background-image: url("img/img1.png");
+}
+
+.screen-image2 {
+  background-image: url("img/img2.png");
+}
+
+.screen-image3 {
+  background-image: url("img/img3.png");
+}
+
+.icon-board {
+  color: #49ae87;
+  font-size: 190px !important;
+}
+
+.newsletter {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fad242;
+}
+
+.newsletter-content {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
