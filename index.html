@@ -5,6 +5,7 @@
     <title>Fast food</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hover.css" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat|Roboto"
       rel="stylesheet"
@@ -19,7 +20,7 @@
   <body>
     <div class="menu-nav">
       <a href="#about">
-        <li>
+        <li class="link-hover">
           O APLIKACJI
           <i class="material-icons">
             keyboard_arrow_down
@@ -27,7 +28,7 @@
         </li>
       </a>
       <a href="#slimming">
-        <li>
+        <li class="link-hover">
           ODCHUDZANIE
           <i class="material-icons">
             keyboard_arrow_down
@@ -36,7 +37,7 @@
       </a>
 
       <a href="#mass">
-        <li>
+        <li class="link-hover">
           MASA
           <i class="material-icons">
             keyboard_arrow_down
@@ -44,7 +45,7 @@
         </li>
       </a>
       <a href="#variety">
-        <li>
+        <li class="link-hover">
           UROZMAICONA DIETA
           <i class="material-icons">
             keyboard_arrow_down
@@ -52,7 +53,7 @@
         </li>
       </a>
       <a href="#">
-        <li>
+        <li class="link-hover">
           NEWSLETTER
           <i class="material-icons">
             keyboard_arrow_down
@@ -72,7 +73,7 @@
 
         <div class="topbar-image"><img class="main-image" /></div>
 
-        <div class="topbar-btn">KUP</div>
+        <div class="topbar-btn ">KUP</div>
       </div>
     </div>
 
@@ -84,9 +85,9 @@
       </div>
 
       <div class="section-start-field">
-        <div class="section-start-content">
+        <div class="section-start-content ">
           <i class="material-icons board-icon">watch_later</i>
-          <p>
+          <p class="board-content-efect">
             <b>Oszczędzasz czas</b><br />
             <span class="small-text"
               >Krótszy czas między półkami w markecie, żadnych kolejek u
@@ -97,7 +98,7 @@
 
         <div class="section-start-content">
           <i class="material-icons board-icon">favorite</i>
-          <p>
+          <p class="board-content-efect">
             <b>Jesz to co lubisz.</b><br />
             <span class="small-text">
               Cieszysz się pysznym, zdrowym i ulubionym jedzeniem!</span
@@ -106,7 +107,7 @@
         </div>
         <div class="section-start-content">
           <i class="material-icons board-icon">collections_bookmark</i>
-          <p>
+          <p class="board-content-efect">
             <b>Nudne posiłki to już przeszłość</b> <br/ >
             <span class="small-text"
               >aplikacja z szeroką bazą produktów/potraw podpowie ci nowe
@@ -117,7 +118,7 @@
 
         <div class="section-start-content">
           <i class="material-icons board-icon">fastfood</i>
-          <p>
+          <p class="board-content-efect">
             <b>Liczenie kalorii staje się przeszłością </b> <br />
             <span class="small-text">Aplikacja liczy je za ciebie</span>
           </p>
@@ -125,7 +126,7 @@
 
         <div class="section-start-content">
           <i class="material-icons board-icon">person_pin</i>
-          <p>
+          <p class="board-content-efect">
             <b>Samodzielne układanie diety</b><br />
             <span class="small-text"> bez ingerencji dietetyka</span>
           </p>
@@ -133,7 +134,7 @@
 
         <div class="section-start-content">
           <i class="material-icons board-icon">phone_android</i>
-          <p>
+          <p class="board-content-efect">
             <b>Estetyczny wygląd, prosta nieskomplikowana nawigacja </b> <br />
             <span class="small-text"> każdy się odnajdzie!</span>
           </p>
@@ -148,26 +149,34 @@
       <div class="section-start-field">
         <div class="section-start-content">
           <i class="material-icons board-icon">stars</i>
-          <p>
-            Chciałbyś <b>zrzucić zbędne kilogramy?</b> Znowu lekko i dobrze
-            poczuć się z własną wagą?
+          <p class="board-content-efect">
+            <b>Odchudasz się?</b><br />
+            <span class="small-text"
+              >Chciałbyś zrzucić zbędne kilogramy? Znowu lekko i dobrze poczuć
+              się z własną wagą?</span
+            >
           </p>
         </div>
         <div class="section-start-content">
           <i class="material-icons board-icon">favorite</i>
-          <p>
-            Trenujesz, jesteś aktywny? Chciałbyś widzieć swoje
-            <b>raporty pokazujące ilość zjedzonych kalorii</b> - system ci to
-            umożliwi
+          <p class="board-content-efect">
+            <b>Trenujesz, jesteś aktywny?</b> <br/ >
+            <span class="small-text"
+              >Chciałbyś widzieć swoje raporty pokazujące ilość zjedzonych
+              kalorii - system ci to umożliwi</span
+            >
           </p>
         </div>
 
         <div class="section-start-content">
           <i class="material-icons board-icon">watch_later</i>
-          <p>
-            <b>Jesteś alergikiem?</b> Nie martw się. Od dziś możesz jeść bez
-            obaw, ponieważ aplikacja podpowie ci,
-            <b>na jakie produkty/dania powinieneś uważać</b>
+          <p class="board-content-efect">
+            <b>Jesteś alergikiem?</b> <br/ >
+            <span class="small-text"
+              >Nie martw się. Od dziś możesz jeść bez obaw, ponieważ aplikacja
+              podpowie ci,
+              <b>na jakie produkty/dania powinieneś uważać</b></span
+            >
           </p>
         </div>
       </div>
@@ -337,7 +346,7 @@
     </div>-->
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
+    <script type="text/javascript" src="script.js"></script>
     <script src="jquery.viewportchecker.min.js"></script>
   </body>
 </html>

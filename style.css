@@ -27,10 +27,6 @@ body {
   align-items: center;
 }
 
-.menu-nav li:hover {
-  font-weight: 600;
-}
-
 .button {
   color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
