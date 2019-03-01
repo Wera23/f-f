@@ -12,6 +12,11 @@ body {
   display: flex;
   padding: 30px 50px;
   position: relative;
+
+  /*
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);*/
 }
 
 .menu-nav a {
@@ -44,7 +49,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #eeecec;
-  padding: 20px 20px;
+  padding: 30px 20px;
 }
 
 .topbar-content {
@@ -65,7 +70,6 @@ body {
 
 .topbar-slogan {
   font-family: "Montserrat", sans-serif;
-  color: #ff8902;
 }
 
 .topbar-title,
@@ -251,17 +255,21 @@ body {
   background-image: url("img/img3.png");
 }
 
-.icon-board {
-  color: #49ae87;
-  font-size: 190px !important;
-}
-
-.newsletter {
-  height: 25vh;
+.panel {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fad242;
+  height: 10vh;
+  background-color: #91e9dabb;
+  padding-bottom: 20px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: #91e9dabb;
 }
 
 .newsletter-content {

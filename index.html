@@ -11,6 +11,12 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
@@ -65,7 +71,6 @@
     </div>
     <div class="topbar">
       <div class="topbar-content">
-        <!-- <div class="topbar-title">FastFood</div> -->
         <div class="topbar-inf">
           <div class="topbar-title">Fast food</div>
           <div class="topbar-slogan">Jedz i żyj zdrowo</div>
@@ -73,7 +78,7 @@
 
         <div class="topbar-image"><img class="main-image" /></div>
 
-        <div class="topbar-btn ">KUP</div>
+        <div class="topbar-btn"></div>
       </div>
     </div>
 
@@ -174,16 +179,17 @@
             <b>Jesteś alergikiem?</b> <br/ >
             <span class="small-text"
               >Nie martw się. Od dziś możesz jeść bez obaw, ponieważ aplikacja
-              podpowie ci,
-              <b>na jakie produkty/dania powinieneś uważać</b></span
+              podpowie ci, na jakie produkty/dania powinieneś uważać</span
             >
           </p>
         </div>
       </div>
 
-      <i class="material-icons section-arrow">
-        keyboard_arrow_down
-      </i>
+      <a href="#slimming" class="board-content-efect">
+        <i class="material-icons section-arrow">
+          keyboard_arrow_down
+        </i>
+      </a>
     </div>
 
     <!--TWOJA WAGA W TWOICH RĘKACH-->
@@ -191,7 +197,7 @@
     <div class="section-overlay section-overlay-persona1" id="slimming">
       <div class="section-content section-title-field">
         <div class="section-title slogan">Twoja waga <br />w Twoich rękach</div>
-        <div class="section-subtitle">- coś dla osób odchudzających się</div>
+        <div class="section-subtitle"></div>
         <img class="screen-image1" />
       </div>
       <div class="section-content">
@@ -221,11 +227,6 @@
               ciągle przypominać, że jesteś na diecie?
             </li>
           </div>
-
-          <!--
-          <div class="section-title">
-            <i class="icon-ok-circle"></i>Skorzystaj z FAST FOODA!
-          </div>-->
 
           <div class="section-description">
             Dzięki fast foodowi bycie na diecie może być fajne i lekkie.
@@ -336,14 +337,27 @@
       </div>
     </div>
 
-    <!--<div class="newsletter">
+    <div class="newsletter">
       <div class="newletter-icon"><i class="icon-mail"></i></div>
       <div class="newsletter-content">
         Testuj fastfooda za darmo, sprawdź jego możliwości i ciesz się
         samodzielną łatwością układania diety dla Ciebie<br/ > Zostaw swojego
         maila. Zapisz się do Newslettera
       </div>
-    </div>-->
+    </div>
+
+    <div class="panel">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="icon_prefix" type="text" class="validate" />
+              <label for="icon_prefix">Mail</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
