@@ -34,6 +34,7 @@ body {
 
 .button {
   color: rgba(255, 255, 255, 0.9);
+  font-family: "Libre Franklin", sans-serif;
   font-size: 18px;
   padding: 15px 45px;
   background-image: linear-gradient(
@@ -72,11 +73,11 @@ body {
 
 .topbar-title {
   font-size: 55px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .topbar-slogan {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .topbar-title,
@@ -119,7 +120,7 @@ body {
 
 .section-start-title {
   font-size: 35px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .section-start-field {
@@ -311,9 +312,10 @@ body {
   font-size: 18px;
   /*background-color: #83e4dc;*/
   padding: 5px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
 }
 
-.input-mail-submit,
 .input-mail-name {
   font-weight: 600;
 }
@@ -325,8 +327,9 @@ body {
 .input-mail-submit {
   padding: 11px;
   background-color: #ff8902;
-  border-radius: 10px;
+
   color: white;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .input-mail-field {
