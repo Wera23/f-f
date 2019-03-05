@@ -272,13 +272,139 @@ body {
   background-image: url("img/img3.png");
 }
 
+/* style dla planszy CO DAJE FASTFOOD  */
+
+.summary-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #c7e2e0;
+}
+
+.summary-title {
+  padding-bottom: 35px;
+}
+
+.summary-subtitle {
+  font-size: 14px;
+  opacity: 0.7;
+  padding: 20px 0;
+  font-weight: 600;
+  text-align: center;
+  color: #003b36;
+}
+
+.summary-basic-inf {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  width: 50%;
+}
+
+.summary-basic-inf-name {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 26px;
+}
+
+.summary-basic-inf-time-field {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.summary-basic-inf-icon {
+  color: #ff6502;
+  padding-right: 10px;
+}
+
+.summary-basic-inf-description {
+  padding: 25px 0;
+}
+
+.summmary-basic-inf-ingredients,
+.summary-basic-inf-description {
+  opacity: 0.7;
+}
+
+.summmary-basic-inf-ingredients {
+  padding-top: 25px;
+}
+
+.summmary-basic-inf-ingredients li {
+  list-style: disc;
+}
+
+.summary-data {
+  display: flex;
+  width: 50vw;
+  padding: 45px 0;
+}
+
+.summary-data-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  width: 50%;
+}
+
+.sumary-data-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #ffa042;
+}
+
+.summary-data-content-name {
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+.summary-data-content-value {
+  font-size: 30px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.summary-plan {
+  padding: 40px 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-plan-list {
+  margin-top: 30px;
+}
+
+.summary-plan-list li {
+  list-style: none;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.summary-list-icon {
+  padding: 20px;
+  background-color: #ffa042;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* style dla NEWSLETTERA/FOOTER*/
 .footer {
   background-color: #00c9b7;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 35vh;
+  height: 40vh;
 }
 
 .newsletter {
@@ -310,7 +436,6 @@ body {
 
 .newsletter-mail {
   font-size: 18px;
-  /*background-color: #83e4dc;*/
   padding: 5px;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 600;
@@ -345,137 +470,27 @@ body {
   border: none;
 }
 
-.summary-board {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-  background-color: #c7e2e0;
-}
-
-.summary-title {
-  padding-bottom: 55px;
-}
-
-.summary-subtitle {
-  font-size: 14px;
-  opacity: 0.7;
-  padding: 20px 0;
-  font-weight: 600;
-  text-align: center;
-  color: #003b36;
-}
-
-.summary-basic-inf {
-  display: flex;
-  flex-direction: column;
-  padding: 50px 0;
-  width: 50%;
-}
-
-.summary-basic-inf-name {
-  font-family: "Libre Franklin", sans-serif;
-  font-size: 26px;
-}
-
-.summary-basic-inf-time {
-  justify-content: center;
-  align-items: center;
-}
-
-.summmary-basic-inf-ingredients,
-.summary-basic-inf-description {
-  opacity: 0.7;
-  font-size: 14px;
-  padding: 30px 0;
-}
-
-.summmary-basic-inf-ingredients li {
-  list-style: none;
-}
-
-.summary-data {
-  display: flex;
-  width: 50vw;
-  padding: 45px 0;
-}
-
-.summary-data-field {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-  width: 50%;
-}
-
-.sumary-data-content {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-right: 2px solid #ffa042;
-}
-
-.summary-data-content-name {
-  opacity: 0.6;
-  margin-bottom: 10px;
-}
-
-.summary-data-content-value {
-  font-size: 30px;
-  font-family: "Libre Franklin", sans-serif;
-}
-
-.summary-plan {
-  padding: 50px 0;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.summary-plan-list {
-  margin-top: 30px;
-}
-
-.summary-plan-list li {
-  list-style: none;
-  padding-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.summary-list-icon {
-  padding: 20px;
-  background-color: #ffa042;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-/*na potem*/
+/*Style dla GALERII*/
 .gallery-field {
   display: flex;
   flex-direction: column;
   background-color: #c7e2e0;
-  padding-top: 25px;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 }
 
 .gallery {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  padding-top: 50px;
 }
 
 .gallery-img {
-  width: 24.5vw;
-  height: 24.5vw;
+  width: 24.8vw;
+  height: 24.8vw;
 
   background-size: cover;
   background-repeat: no-repeat;
