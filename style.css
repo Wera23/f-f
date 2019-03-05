@@ -274,11 +274,18 @@ body {
 
 /* style dla planszy CO DAJE FASTFOOD  */
 
-.summary-board {
+.summary-board,
+.summary-data-field,
+.summary-plan,
+.sumary-data-content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.summary-board {
+  flex-direction: column;
   padding: 50px 0;
   background-color: #c7e2e0;
 }
@@ -343,20 +350,12 @@ body {
 }
 
 .summary-data-field {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 10px 0;
   width: 50%;
 }
 
 .sumary-data-content {
-  display: flex;
   flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-right: 2px solid #ffa042;
 }
 
@@ -373,10 +372,6 @@ body {
 .summary-plan {
   padding: 40px 0;
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .summary-plan-list {
@@ -398,18 +393,22 @@ body {
 }
 
 /* style dla NEWSLETTERA/FOOTER*/
+
+.newsletter-content,
 .footer {
-  background-color: #00c9b7;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.footer {
+  background-color: #00c9b7;
   height: 40vh;
 }
 
 .newsletter {
   display: flex;
-  flex-direction: row;
 }
 
 .panel-mail {
@@ -423,10 +422,6 @@ body {
 .newsletter-content {
   font-size: 16px;
   letter-spacing: 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .icon-newsletter {
@@ -437,24 +432,20 @@ body {
 .newsletter-mail {
   font-size: 18px;
   padding: 5px;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 600;
-}
-
-.input-mail-name {
-  font-weight: 600;
 }
 
 .input-mail-name {
   margin-right: 20px;
 }
 
+.input-mail-name,
+.newsletter-mail {
+  font-weight: 600;
+}
+
 .input-mail-submit {
   padding: 11px;
   background-color: #ff8902;
-
-  color: white;
-  font-family: "Libre Franklin", sans-serif;
 }
 
 .input-mail-field {
@@ -462,30 +453,37 @@ body {
   padding: 10px;
   background-color: #00c9b7;
   border-bottom: 2px solid #02302b;
-  color: white;
+
   width: 350px;
 }
 
-.input-mail-field:focus {
-  border: none;
+.input-mail-field,
+.input-mail-submit {
+  color: #fff;
+}
+
+.input-mail-submit,
+.newsletter-mail {
+  font-family: "Libre Franklin", sans-serif;
 }
 
 /*Style dla GALERII*/
-.gallery-field {
-  display: flex;
-  flex-direction: column;
-  background-color: #c7e2e0;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
-}
 
+.gallery-field,
 .gallery {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden !important;
   padding-top: 50px;
+}
+
+.gallery-field {
+  flex-direction: column;
+  background-color: #c7e2e0;
+}
+
+.gallery {
+  overflow-x: hidden !important;
 }
 
 .gallery-img {
@@ -495,12 +493,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
-
   overflow-x: hidden;
 }
 
 .gallery-img:nth-child(1) {
-  background-image: url("img/food1.png");
+  background-image: url("img/food1.jpg");
 }
 
 .gallery-img:nth-child(2) {
