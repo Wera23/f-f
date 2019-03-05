@@ -278,7 +278,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 25vh;
+  height: 35vh;
 }
 
 .newsletter {
@@ -343,4 +343,113 @@ body {
 
 .input-mail-field:focus {
   border: none;
+}
+
+.summary-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 0;
+}
+
+.summary-title {
+  padding-bottom: 55px;
+}
+
+.summary-basic-inf {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  width: 50%;
+}
+
+.summary-basic-inf-name {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 26px;
+}
+
+.summary-basic-inf-time {
+  justify-content: center;
+  align-items: center;
+}
+
+.summmary-basic-inf-ingredients,
+.summary-basic-inf-description {
+  opacity: 0.7;
+  font-size: 14px;
+  padding: 30px 0;
+}
+
+.summmary-basic-inf-ingredients li {
+  list-style: none;
+}
+
+.summary-data {
+  display: flex;
+  width: 40%;
+}
+
+.sumary-data-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.summary-data-content-name {
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+.summary-data-content-value {
+  font-size: 30px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/*na potem*/
+.gallery-field {
+  display: flex;
+  flex-direction: column;
+  background-color: #c7e2e0;
+  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.gallery-img {
+  width: 24.5vw;
+  height: 24.5vw;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+}
+
+.gallery-img:nth-child(1) {
+  background-image: url("img/food1.png");
+}
+
+.gallery-img:nth-child(2) {
+  background-image: url("img/food2.jpg");
+}
+
+.gallery-img:nth-child(3) {
+  background-image: url("img/food3.jpg");
+}
+
+.gallery-img:nth-child(4) {
+  background-image: url("img/food4.jpg");
 }
