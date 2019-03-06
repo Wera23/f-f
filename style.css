@@ -12,8 +12,6 @@ li {
 }
 
 .menu-nav {
-  display: flex;
-
   background-color: #f3f1f1;
   padding: 30px 50px;
   position: relative;
@@ -25,16 +23,11 @@ li {
 }
 
 .menu-nav li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-right: 45px;
 }
 
 .button {
   color: rgba(255, 255, 255, 0.9);
-  font-family: "Libre Franklin", sans-serif;
-  font-size: 18px;
   padding: 15px 45px;
   background-image: linear-gradient(
     to bottom,
@@ -51,52 +44,26 @@ li {
 
 /* TOP BAR */
 .topbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #eeecec;
   padding: 30px 20px;
 }
 
 .topbar-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
-.topbar-inf {
+.topbar-inf,
+.topbar-btn,
+.topbar-image {
   flex: 1;
 }
 
 .topbar-title {
   font-size: 55px;
-  font-family: "Libre Franklin", sans-serif;
-}
-
-.topbar-slogan {
-  font-family: "Libre Franklin", sans-serif;
-}
-
-.topbar-title,
-.topbar-slogan {
-  display: flex;
-  justify-content: center;
-}
-
-.topbar-btn {
-  flex: 1;
-}
-
-.topbar-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
 }
 
 .main-image {
   background-image: url("img/main-img.png");
-  background-size: cover;
   height: 700px;
   width: 400px;
 
@@ -109,39 +76,18 @@ li {
 
 .section-start {
   background-color: #91e9da;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 0;
-}
-
-.section-start-title {
-  font-size: 35px;
-  font-family: "Libre Franklin", sans-serif;
+  padding: 50px 0;
 }
 
 .section-start-field {
   width: 60%;
-  display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .section-start-content {
-  width: 30vh;
-  height: 30vh;
+  width: 15vw;
   margin: 20px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-start-content p {
-  text-align: center;
-  font-size: 18px;
 }
 
 .board-icon {
@@ -173,49 +119,28 @@ li {
 
 /* style dla planszy CO DAJE FASTFOOD  */
 
-.summary-board,
-.summary-data-field,
-.summary-plan,
-.sumary-data-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .summary-board {
-  flex-direction: column;
   padding: 50px 0;
   background-color: #c7e2e0;
 }
 
-.summary-title {
-  padding-bottom: 35px;
-}
-
 .summary-subtitle {
-  font-size: 14px;
   opacity: 0.7;
   padding: 20px 0;
   font-weight: 600;
-  text-align: center;
   color: #003b36;
 }
 
 .summary-basic-inf {
-  display: flex;
-  flex-direction: column;
   padding: 30px 0;
   width: 50%;
 }
 
 .summary-basic-inf-name {
-  font-family: "Libre Franklin", sans-serif;
   font-size: 26px;
 }
 
 .summary-basic-inf-time-field {
-  display: flex;
   align-items: center;
   padding-top: 15px;
 }
@@ -243,7 +168,6 @@ li {
 }
 
 .summary-data {
-  display: flex;
   width: 50vw;
   padding: 45px 0;
 }
@@ -265,7 +189,6 @@ li {
 
 .summary-data-content-value {
   font-size: 30px;
-  font-family: "Libre Franklin", sans-serif;
 }
 
 .summary-plan {
@@ -279,7 +202,6 @@ li {
 
 .summary-plan-list li {
   padding-bottom: 10px;
-  display: flex;
   align-items: center;
 }
 
@@ -293,7 +215,6 @@ li {
 /* PLANSZE O PERSONACH */
 
 .section-overlay {
-  display: flex;
   align-items: center;
   flex-wrap: wrap;
   color: rgba(0, 0, 0, 0.8);
@@ -310,8 +231,6 @@ li {
 
 .section-content {
   flex: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 .section-content-persona2 {
@@ -319,8 +238,6 @@ li {
 }
 
 .section-field {
-  display: flex;
-  flex-direction: column;
   align-content: center;
   justify-content: space-evenly;
   height: 100%;
@@ -329,9 +246,6 @@ li {
 }
 
 .section-queries {
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
   margin-bottom: 55px;
 }
 
@@ -344,19 +258,17 @@ li {
   text-decoration: none;
 }
 
-.section-title-field {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.section-title {
+  font-size: 35px;
+  padding-bottom: 50px;
 }
 
-.section-title {
-  font-size: 30px;
+.section-title-query {
   font-family: "Montserrat", sans-serif;
+  font-size: 30px;
   font-weight: 700;
   color: #ff7402;
   margin-bottom: 45px;
-  text-align: center;
 }
 
 .slogan {
@@ -367,7 +279,6 @@ li {
 .screen-image1,
 .screen-image2,
 .screen-image3 {
-  background-size: cover;
   width: 300px;
   height: 550px;
 
@@ -390,25 +301,12 @@ li {
 
 /* style dla NEWSLETTERA/FOOTER*/
 
-.newsletter-content,
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.footer {
-  background-color: #00c9b7;
-  height: 40vh;
-}
-
-.newsletter {
-  display: flex;
+  background-color: #2bcec0;
+  padding: 50px;
 }
 
 .panel-mail {
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 35vw;
@@ -426,7 +324,6 @@ li {
 }
 
 .newsletter-mail {
-  font-size: 18px;
   padding: 5px;
 }
 
@@ -458,23 +355,14 @@ li {
   color: #fff;
 }
 
-.input-mail-submit,
-.newsletter-mail {
-  font-family: "Libre Franklin", sans-serif;
-}
-
 /*Style dla GALERII*/
 
 .gallery-field,
 .gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 50px;
 }
 
 .gallery-field {
-  flex-direction: column;
   background-color: #c7e2e0;
 }
 
@@ -482,8 +370,6 @@ li {
   width: 24.8vw;
   height: 24.8vw;
 
-  background-size: cover;
-  background-repeat: no-repeat;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -502,4 +388,118 @@ li {
 
 .gallery-img:nth-child(4) {
   background-image: url("img/food4.jpg");
+}
+
+/*style wspólne */
+
+.button,
+.topbar-title,
+.topbar-slogan,
+.section-title,
+.summary-basic-inf-name,
+.summary-data-content-value,
+.input-mail-submit,
+.newsletter-mail {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.menu-nav,
+.menu-nav li,
+.topbar,
+.topbar-content,
+.topbar-title,
+.topbar-slogan,
+.topbar-image,
+.section-start,
+.section-start-field,
+.section-start-content,
+.summary-board,
+.summary-data-field,
+.summary-plan,
+.sumary-data-content,
+.summary-basic-inf,
+.summary-basic-inf-time-field,
+.summary-data,
+.summary-plan-list,
+.section-overlay,
+.section-content,
+.section-field,
+.section-queries,
+.section-title-field,
+.newsletter-content,
+.footer,
+.newsletter,
+.panel-mail,
+.gallery-field,
+.gallery {
+  display: flex;
+}
+
+.menu-nav li,
+.topbar,
+.topbar-content,
+.section-start,
+.section-start-content,
+.summary-board,
+.summary-data-field,
+.summary-plan,
+.sumary-data-content,
+.section-title-field,
+.newsletter-content,
+.footer,
+.gallery-field,
+.gallery {
+  justify-content: center;
+  align-items: center;
+}
+
+.topbar-title,
+.topbar-slogan,
+.topbar-image {
+  justify-content: center;
+}
+
+.section-start,
+.section-start-content,
+.summary-board,
+.summary-data-field,
+.summary-plan,
+.summary-plan-list,
+.sumary-data-content,
+.summary-basic-inf,
+.section-content,
+.section-field,
+.section-queries,
+.newsletter-content,
+.footer,
+.gallery-field {
+  flex-direction: column;
+}
+
+.gallery-img,
+.main-image,
+.screen-image1,
+.screen-image2,
+.screen-image3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-start-content p,
+.summary-subtitle,
+.section-title-query {
+  text-align: center;
+}
+
+/*
+.newsletter-mail,
+.button,
+.section-start-content p,
+.section-queries {
+  font-size: 18px;
+}
+*/
+
+.greater-text {
+  font-size: 18px;
 }
