@@ -19,60 +19,64 @@
   </head>
 
   <body>
-    <div class="menu-nav">
-      <a href="#about">
-        <li class="link-hover">
-          O APLIKACJI
-          <i class="material-icons">
-            keyboard_arrow_down
-          </i>
-        </li>
-      </a>
-      <a href="#slimming">
-        <li class="link-hover">
-          ODCHUDZANIE
-          <i class="material-icons">
-            keyboard_arrow_down
-          </i>
-        </li>
-      </a>
+    <nav>
+      <div class="menu-nav">
+        <a href="#about">
+          <li class="link-hover">
+            O APLIKACJI
+            <i class="material-icons">
+              keyboard_arrow_down
+            </i>
+          </li>
+        </a>
+        <a href="#slimming">
+          <li class="link-hover">
+            ODCHUDZANIE
+            <i class="material-icons">
+              keyboard_arrow_down
+            </i>
+          </li>
+        </a>
 
-      <a href="#mass">
-        <li class="link-hover">
-          MASA
-          <i class="material-icons">
-            keyboard_arrow_down
-          </i>
-        </li>
-      </a>
-      <a href="#variety">
-        <li class="link-hover">
-          UROZMAICONA DIETA
-          <i class="material-icons">
-            keyboard_arrow_down
-          </i>
-        </li>
-      </a>
-      <a href="#">
-        <li class="link-hover">
-          NEWSLETTER
-          <i class="material-icons">
-            keyboard_arrow_down
-          </i>
-        </li>
-      </a>
+        <a href="#mass">
+          <li class="link-hover">
+            MASA
+            <i class="material-icons">
+              keyboard_arrow_down
+            </i>
+          </li>
+        </a>
+        <a href="#variety">
+          <li class="link-hover">
+            UROZMAICONA DIETA
+            <i class="material-icons">
+              keyboard_arrow_down
+            </i>
+          </li>
+        </a>
+        <a href="#">
+          <li class="link-hover">
+            NEWSLETTER
+            <i class="material-icons">
+              keyboard_arrow_down
+            </i>
+          </li>
+        </a>
 
-      <div class="button greater-text">WYPRÓBUJ WERSJĘ PRÓBNĄ</div>
-    </div>
+        <div class="button greater-text">WERSJA PRÓBNA</div>
+      </div>
+    </nav>
+
     <div class="topbar">
       <div class="topbar-content">
         <div class="topbar-inf">
-          <div class="topbar-title">Fast food</div>
-          <div class="topbar-slogan">Jedz i żyj zdrowo</div>
+          <header>
+            <div class="topbar-title">Fast food</div>
+            <div class="topbar-slogan">Jedz i żyj zdrowo</div>
+          </header>
         </div>
-
+        <
         <div class="topbar-image"><img class="main-image" /></div>
-
         <div class="topbar-btn"></div>
       </div>
     </div>
@@ -189,7 +193,9 @@
       </div>
 
       <div class="summary-basic-inf">
-        <span class="summary-subtitle small-text">Poznasz nowe przepisy na posiłki</span>
+        <span class="summary-subtitle small-text"
+          >Poznasz nowe przepisy na posiłki</span
+        >
 
         <span class="summary-basic-inf-name"
           >Naleśniki z jagodami i nutellą</span
@@ -254,7 +260,9 @@
 
       <div class="summary-plan">
         <div>
-          <span class="summary-subtitle small-text">Twoje plany żywieniowe</span>
+          <span class="summary-subtitle small-text"
+            >Twoje plany żywieniowe</span
+          >
         </div>
 
         <div class="summary-plan-list">
@@ -452,42 +460,47 @@
       </div>
     </div>
 
-    <div class="footer">
-      <div class="newsletter">
-        <div class="newletter-icon">
-          <i class="material-icons icon-newsletter">
-            mail
-          </i>
-        </div>
-        <div class="newsletter-content greater-text">
-          <p >
-            Testuj fastfooda za darmo, sprawdź jego możliwości i ciesz się
-            samodzielną łatwością układania diety dla Ciebie
-          </p>
-          <p class="newsletter-mail greater-text">
-            Zostaw swojego maila. Zapisz się do Newslettera
-          </p>
-        </div>
-      </div>
-
-      <div class="panel">
-        <form action="#" class="panel-mail">
-          <label class="input-mail-name" for="mail">E-mail:</label>
-          <input
-            type="text"
-            id="mail"
-            name="email"
-            placeholder="Wpisz swojego maila"
-            class="input-mail-field"
-          />
-
-
-          <div class="input-mail-submit btn-hover" type="submit" value="Submit">
-            WYŚLIJ
+    <footer>
+      <div class="footer">
+        <div class="newsletter">
+          <div class="newletter-icon">
+            <i class="material-icons icon-newsletter">
+              mail
+            </i>
           </div>
-        </form>
+          <div class="newsletter-content greater-text">
+            <p>
+              Testuj fastfooda za darmo, sprawdź jego możliwości i ciesz się
+              samodzielną łatwością układania diety dla Ciebie
+            </p>
+            <p class="newsletter-mail greater-text">
+              Zostaw swojego maila. Zapisz się do Newslettera
+            </p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <form action="#" class="panel-mail">
+            <label class="input-mail-name" for="mail">E-mail:</label>
+            <input
+              type="text"
+              id="mail"
+              name="email"
+              placeholder="Wpisz swojego maila"
+              class="input-mail-field"
+            />
+
+            <div
+              class="input-mail-submit btn-hover"
+              type="submit"
+              value="Submit"
+            >
+              WYŚLIJ
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
+    </footer>
 
     <div class="gallery-field">
       <div class="section-title">
@@ -499,6 +512,7 @@
         <div class="gallery-img"></div>
         <div class="gallery-img"></div>
       </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="script.js"></script>

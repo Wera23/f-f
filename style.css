@@ -45,7 +45,7 @@ li {
 /* TOP BAR */
 .topbar {
   background-color: #eeecec;
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
 .topbar-content {
@@ -76,7 +76,7 @@ li {
 
 .section-start {
   background-color: #91e9da;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .section-start-field {
@@ -116,8 +116,24 @@ li {
 /* style dla planszy CO DAJE FASTFOOD  */
 
 .summary-board {
-  padding: 50px 0;
-  background-color: #c7e2e0;
+  padding: 60px 0;
+  position: relative;
+  background-color: #03413b7c;
+}
+
+.summary-board::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("img/backgroung-img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .summary-subtitle {
