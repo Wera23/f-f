@@ -1,10 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-}
+  line-height: 2;
+  font-size: 20px;
 
-* {
-  font-family: "Roboto", sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 li {
@@ -12,12 +12,9 @@ li {
 }
 
 .menu-nav {
-  background-color: rgba(238, 245, 241, 0.829);
+  background-color: rgba(238, 245, 241, 0.6);
   padding: 30px 50px;
   position: relative;
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.7);
 }
 
 .menu-nav a {
@@ -100,6 +97,8 @@ li {
 /* PLANSZA STRARTOWA - CO TO, DLA KOGO */
 
 .section-start {
+  /*background-color: #008c72;*/
+
   background-color: #9ac7bd;
   padding: 60px 0;
 }
@@ -117,20 +116,12 @@ li {
 
 .board-icon {
   font-size: 70px !important;
-  background-image: linear-gradient(
-    to bottom,
-    #ff6502,
-    #ff6f00,
-    #ff7800,
-    #ff8100,
-    #ff8902
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff8902;
 }
 
 .for-whom {
   background-color: #eef5f1;
+  color: black;
 }
 
 .section-arrow {
@@ -165,6 +156,8 @@ li {
   padding: 20px 0;
   font-weight: 600;
   color: #003b36;
+  letter-spacing: 2px;
+  font-family: "Lato";
 }
 
 .summary-basic-inf {
@@ -173,7 +166,9 @@ li {
 }
 
 .summary-basic-inf-name {
-  font-size: 26px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: "Lato";
 }
 
 .summary-basic-inf-time-field {
@@ -182,19 +177,14 @@ li {
 }
 
 .summary-basic-inf-icon {
-  color: #ff6502;
+  color: #ff8902;
   padding-right: 10px;
 }
 
 .summary-basic-inf-description {
   padding: 35px 0;
   width: 30vw;
-  font-size: 17px;
-}
-
-.summmary-basic-inf-ingredients,
-.summary-basic-inf-description {
-  opacity: 0.7;
+  font-size: 18px;
 }
 
 .summmary-basic-inf-ingredients {
@@ -203,7 +193,7 @@ li {
 
 .summmary-basic-inf-ingredients li {
   list-style: disc;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 .summary-data {
@@ -240,7 +230,7 @@ li {
 }
 
 .summary-plan-list li {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   align-items: center;
 }
 
@@ -288,13 +278,25 @@ li {
 }
 
 .section-description {
-  font-size: 15px;
+  font-size: 22px;
   padding: 20px 30px;
+  background-color: #ffb162;
+  font-family: "Lato";
+}
+
+.section-description-persona2 {
+  background-color: #d9ebe6;
 }
 
 .section-title {
   font-size: 35px;
-  padding-bottom: 50px;
+  padding: 20px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.section-title-background {
+  background-color: #eef5f1;
 }
 
 .section-title-query {
@@ -320,6 +322,27 @@ li {
   -webkit-box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
   -moz-box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
   box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
+}
+
+.summary-board {
+  padding: 60px 0;
+  position: relative;
+  background-color: #03413b7c;
+}
+
+.summary-board::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("img/backgroung-img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .screen-image1 {
@@ -433,7 +456,9 @@ li {
 .summary-data-content-value,
 .input-mail-submit,
 .newsletter-mail {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Mukta", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .menu-nav,
