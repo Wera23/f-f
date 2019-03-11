@@ -12,7 +12,7 @@ li {
 }
 
 .menu-nav {
-  background-color: rgba(238, 245, 241, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 30px 50px;
   position: relative;
 }
@@ -50,8 +50,7 @@ li {
 .topbar {
   position: relative;
   padding: 40px 20px;
-
-  background-color: #085a4c71;
+  background-color: #5e35b18c;
 }
 
 .topbar-content {
@@ -64,8 +63,9 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("img/background-top.jpg");
-  background-size: contain;
+  background-image: url("img/tloo.jpg");
+  background-size: cover;
+  width: 90%;
   background-attachment: fixed;
   width: 100%;
   height: 100%;
@@ -98,6 +98,7 @@ li {
 
 .tlo {
   padding: 90px 0;
+  background-color: rgba(82, 45, 168, 0.589);
 
   position: relative;
 }
@@ -113,14 +114,14 @@ li {
   background-attachment: fixed;
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: -1;
 }
 
 .section-start {
   /*background-color: #008c72;*/
 
-  background-color: #9ac7bd;
+  background-color: #6244906e;
   padding: 60px 0;
 }
 
@@ -141,7 +142,7 @@ li {
 }
 
 .for-whom {
-  background-color: #eef5f1;
+  background-color: #fff7f6;
   color: black;
 }
 
@@ -150,12 +151,64 @@ li {
   font-size: 30px !important;
 }
 
+/* PREVEW APP*/
+
+.app-preview {
+  width: 100%;
+  background-color: #624490f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+.app-preview::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("img/drawer-header-bg.jpg");
+  background-size: contain;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.preview-element {
+  width: 400px;
+  height: 400px;
+
+  background-size: cover;
+}
+
+.preview-element:nth-child(1) {
+  background-image: url(img/element1.png);
+}
+
+.preview-element:nth-child(2) {
+  background-image: url(img/element2.png);
+}
+
+.preview-element:nth-child(3) {
+  background-image: url(img/element3.png);
+}
+
+.preview-element:nth-child(4) {
+  background-image: url(img/element4.png);
+}
+
 /* style dla planszy CO DAJE FASTFOOD  */
 
 .summary-board {
   padding: 60px 0;
   position: relative;
-  background-color: #03413ba9;
+  background-color: #6244906e;
 }
 
 .summary-board::after {
@@ -164,12 +217,12 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("img/backgroung-img.jpg");
+  background-image: url("img/x.jpg");
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.7;
   z-index: -1;
 }
 
@@ -352,7 +405,7 @@ li {
 .summary-board {
   padding: 60px 0;
   position: relative;
-  background-color: #03413b7c;
+  background-color: #4222725b;
 }
 
 .summary-board::after {
@@ -385,7 +438,7 @@ li {
 /* style dla NEWSLETTERA/FOOTER*/
 
 .footer {
-  background-color: #2bcec0;
+  background-color: #624490f3;
   padding: 50px;
 }
 
@@ -426,8 +479,9 @@ li {
 .input-mail-field {
   border: none;
   padding: 10px;
-  background-color: #00c9b7;
+  background-color: #50308b3b;
   border-bottom: 2px solid #02302b;
+  color: white;
 
   width: 350px;
 }
