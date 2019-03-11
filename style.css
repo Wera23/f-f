@@ -70,14 +70,37 @@ li {
   width: 100%;
   height: 100%;
   opacity: 0.9;
-
   z-index: -1;
 }
 
 .topbar-inf,
-.topbar-btn,
+.topbar-user,
 .topbar-image {
   flex: 1;
+}
+
+.topbar-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topbar-user-inf {
+  color: #fff;
+  font-size: 16px;
+  width: 60%;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+.topbar-user-photo {
+  background-image: url("img/user.jpg");
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  opacity: 0.8;
 }
 
 .topbar-title {
@@ -121,7 +144,7 @@ li {
 .section-start {
   /*background-color: #008c72;*/
 
-  background-color: #6244906e;
+  background-color: white;
   padding: 60px 0;
 }
 
@@ -138,11 +161,20 @@ li {
 
 .board-icon {
   font-size: 70px !important;
-  color: #ff8902;
+  background-image: linear-gradient(
+    to bottom,
+    #ff6502,
+    #ff7614,
+    #ff8524,
+    #ff9333,
+    #ffa042
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .for-whom {
-  background-color: #fff7f6;
+  background-color: #ffffff;
   color: black;
 }
 
@@ -374,7 +406,7 @@ li {
 }
 
 .section-title-background {
-  background-color: #eef5f1;
+  background-color: #ffffff;
 }
 
 .section-title-query {
@@ -394,7 +426,7 @@ li {
 .screen-image1,
 .screen-image2,
 .screen-image3 {
-  width: 300px;
+  width: 350px;
   height: 550px;
 
   -webkit-box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
@@ -438,8 +470,25 @@ li {
 /* style dla NEWSLETTERA/FOOTER*/
 
 .footer {
-  background-color: #624490f3;
+  background-color: #624490da;
   padding: 50px;
+  position: relative;
+}
+
+.footer:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("img/drawer-header-bg.jpg");
+  background-size: contain;
+  width: 90%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .panel-mail {
@@ -473,7 +522,7 @@ li {
 
 .input-mail-submit {
   padding: 11px;
-  background-color: #ff8902;
+  background-color: #ff6502;
 }
 
 .input-mail-field {
