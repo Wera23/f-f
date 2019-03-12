@@ -3,8 +3,8 @@ body {
   padding: 0;
   line-height: 2;
   font-size: 20px;
-
   font-family: "Lato", sans-serif;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 li {
@@ -166,10 +166,84 @@ li {
   background-image: url(img/element4.png);
 }
 
+/* PLANSZE O PERSONACH */
+
+.section-overlay {
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 50px 0;
+}
+
+.section-content {
+  flex: 1;
+}
+
+.section-content-persona2 {
+  align-items: flex-end;
+}
+
+.section-field {
+  align-content: center;
+  justify-content: space-evenly;
+  width: 70%;
+  padding: 20px 0;
+}
+
+.section-queries {
+  margin-bottom: 55px;
+}
+
+.section-description {
+  font-size: 22px;
+  padding: 20px 30px;
+}
+
+.section-title {
+  font-size: 35px;
+  padding: 20px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.section-title-query {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ff7402;
+  margin-bottom: 45px;
+  text-align: left;
+}
+
+.slogan {
+  color: #000000da;
+  font-size: 38px;
+}
+
+.section-screen-image {
+  width: 350px;
+  height: 550px;
+
+  -webkit-box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
+  -moz-box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
+  box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
+}
+
+.screen1 {
+  background-image: url("img/img1.png");
+}
+
+.screen2 {
+  background-image: url("img/img2.png");
+}
+
+.screen3 {
+  background-image: url("img/img3.png");
+}
+
 /* PLANSZA STRARTOWA - CO TO, DLA KOGO */
 
 .section-start {
-  background-color: #eeecec;
   padding: 60px 0;
 }
 
@@ -186,7 +260,8 @@ li {
 
 .board-icon {
   font-size: 70px !important;
-  background-image: linear-gradient(
+  color: #ff6502;
+  /* background-image: linear-gradient(
     to bottom,
     #ff6502,
     #ff7614,
@@ -195,11 +270,7 @@ li {
     #ffa042
   );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.for-whom {
-  background-color: #eeececb7;
+  -webkit-text-fill-color: transparent;*/
 }
 
 /* style dla planszy CO DAJE FASTFOOD  */
@@ -207,7 +278,7 @@ li {
 .summary-board {
   padding: 60px 0;
   position: relative;
-  background-color: #908f4431;
+  background-color: rgba(84, 49, 143, 0.6);
 }
 
 .summary-board::after {
@@ -230,16 +301,11 @@ li {
   font-weight: 600;
   color: #003b36;
   letter-spacing: 2px;
-  font-family: "Lato";
 }
 
 .summary-basic-inf-name {
   font-size: 24px;
   letter-spacing: 2px;
-  font-family: "Lato";
-}
-.box {
-  display: flex;
 }
 
 .summary-basic-inf-time-field {
@@ -252,7 +318,8 @@ li {
   padding-right: 10px;
 }
 
-.box {
+.summary-field {
+  display: flex;
   width: 70vw;
   display: flex;
   justify-content: space-between;
@@ -323,117 +390,6 @@ li {
   margin-right: 15px;
 }
 
-/* PLANSZE O PERSONACH */
-
-.section-overlay {
-  align-items: center;
-  flex-wrap: wrap;
-  color: rgba(0, 0, 0, 0.8);
-  padding: 50px 0;
-}
-
-.section-overlay-persona1 {
-  background-color: #eeecec;
-}
-
-.section-overlay-persona2 {
-  background-color: #d6d6d6;
-}
-
-.section-content {
-  flex: 1;
-}
-
-.section-content-persona2 {
-  align-items: flex-end;
-}
-
-.section-field {
-  align-content: center;
-  justify-content: space-evenly;
-  width: 70%;
-  padding: 20px 0;
-}
-
-.section-queries {
-  margin-bottom: 55px;
-}
-
-.section-description {
-  font-size: 22px;
-  padding: 20px 30px;
-  font-family: "Lato";
-}
-
-.section-title {
-  font-size: 35px;
-  padding: 20px;
-  margin-bottom: 30px;
-  line-height: 1.5;
-}
-
-/*
-
-.section-title-background {
-  background-color: #eeececb7;
-}*/
-
-.section-title-query {
-  font-family: "Montserrat", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: #ff7402;
-  margin-bottom: 45px;
-  text-align: left;
-}
-
-.slogan {
-  color: #000000da;
-  font-size: 38px;
-}
-
-.section-screen-image {
-  width: 350px;
-  height: 550px;
-
-  -webkit-box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
-  -moz-box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
-  box-shadow: 5px 5px 66px -9px rgba(179, 179, 179, 1);
-}
-
-.summary-board {
-  padding: 60px 0;
-  position: relative;
-  background-color: #4222725b;
-}
-
-.summary-board::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("img/backgroung-img.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  z-index: -1;
-}
-
-.screen1 {
-  background-image: url("img/img1.png");
-}
-
-.screen2 {
-  background-image: url("img/img2.png");
-}
-
-.screen3 {
-  background-image: url("img/img3.png");
-}
-
 /* style dla NEWSLETTERA/FOOTER*/
 
 .footer {
@@ -498,8 +454,6 @@ li {
   padding: 10px;
   background-color: #50308b3b;
   border-bottom: 2px solid #02302b;
-  color: white;
-
   width: 350px;
 }
 
@@ -507,41 +461,6 @@ li {
 .input-mail-submit {
   color: #fff;
 }
-
-/*Style dla GALERII*/
-
-.gallery-field {
-  padding-top: 50px;
-}
-
-.gallery-field {
-  background-color: #c7e2e0;
-}
-
-.gallery-img {
-  width: 24.8vw;
-  height: 24.8vw;
-
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-.gallery-img:nth-child(1) {
-  background-image: url("img/food1.jpg");
-}
-
-.gallery-img:nth-child(2) {
-  background-image: url("img/food2.jpg");
-}
-
-.gallery-img:nth-child(3) {
-  background-image: url("img/food3.jpg");
-}
-
-.gallery-img:nth-child(4) {
-  background-image: url("img/food4.jpg");
-}
-
 /*style wspólne */
 
 .button,
@@ -643,11 +562,11 @@ li {
 }
 
 .greater-text {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .small-text {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .white-text {
