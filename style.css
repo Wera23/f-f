@@ -27,9 +27,8 @@ li {
 }
 
 .button {
-  color: rgba(255, 255, 255, 0.9);
-  padding: 15px 45px;
-  background-color: #ff6502;
+  padding: 12px 45px;
+  background-color: #ff5722;
   position: absolute;
   right: 70px;
   top: 15px;
@@ -192,6 +191,7 @@ li {
 
 .section-queries {
   margin-bottom: 55px;
+  font-size: 19px;
 }
 
 .section-description {
@@ -210,7 +210,7 @@ li {
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  color: #ff7402;
+  color: #ff5722;
   margin-bottom: 45px;
   text-align: left;
 }
@@ -260,7 +260,7 @@ li {
 
 .board-icon {
   font-size: 70px !important;
-  color: #ff6502;
+  color: #ff5722;
   /* background-image: linear-gradient(
     to bottom,
     #ff6502,
@@ -393,10 +393,10 @@ li {
 /* style dla NEWSLETTERA/FOOTER*/
 
 .footer {
-  background-color: #624490da;
+  background-color: #624490e1;
   padding: 50px;
   position: relative;
-  color: #eeececb7;
+  color: #ffffffee;
 }
 
 .footer:after {
@@ -446,7 +446,7 @@ li {
 
 .input-mail-submit {
   padding: 11px;
-  background-color: #ff6502;
+  background-color: #ff5722;
 }
 
 .input-mail-field {
@@ -572,3 +572,4 @@ li {
 .white-text {
   color: #eef5f1;
 }
+query
