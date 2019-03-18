@@ -1,31 +1,35 @@
-(function($) {
+;(function($) {
   $.fn.scrollReveal = function() {
-    //get viewport size
-    var windowHeight = $(window).height(),
-      windowWidth = $(window).width(),
-      initialScroll = $(window).scrollTop(),
-      items = $(".js-reveal"),
-      scroll;
+    // get viewport size
+    const windowHeight = $(window).height()
 
-    //hide anything not in the viewport
+    const windowWidth = $(window).width()
+
+    const initialScroll = $(window).scrollTop()
+
+    const items = $('.js-reveal')
+
+    let scroll
+
+    // hide anything not in the viewport
     items.each(function() {
       if ($(this).offset().top >= windowHeight) {
-        $(this).addClass("js-reveal--hidden");
+        $(this).addClass('js-reveal--hidden')
       }
-    });
+    })
 
-    //on scroll
+    // on scroll
     $(window).scroll(function(event) {
-      //get the current scroll position
-      scroll = $(window).scrollTop();
-      //show anything that is now in view (scroll + windowHeight)
+      // get the current scroll position
+      scroll = $(window).scrollTop()
+      // show anything that is now in view (scroll + windowHeight)
       items.each(function() {
         if ($(this).offset().top <= scroll + windowHeight) {
-          $(this).removeClass("js-reveal--hidden");
+          $(this).removeClass('js-reveal--hidden')
         }
-      });
-    });
+      })
+    })
 
-    return this;
-  };
-})(jQuery);
+    return this
+  }
+})(jQuery)

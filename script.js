@@ -14,3 +14,28 @@ $(document).ready(function() {
     }
   })
 })
+
+/*
+
+$(document).ready(function() {
+  let interval = 500
+  $('.element-delay').each(function(index) {
+    $(this)
+      .delay(interval)
+      .fadeIn(500)
+    interval += 500
+  })
+}) */
+
+/*
+
+$(document).ready(function() {
+  let interval = 600
+  $('span').each(function(index) {
+    $(this)
+      .delay(interval)
+      .fadeIn(600)
+    interval += 600
+  })
+})
+*/

@@ -4,12 +4,19 @@ body {
   line-height: 2;
   font-size: 20px;
   font-family: "Lato", sans-serif;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 1);
+  overflow-x: hidden;
 }
 
 li {
   list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* SECTION NAVIGATION, MENU */
 
 .menu-nav {
   background-color: rgba(255, 255, 255, 0.6);
@@ -32,6 +39,7 @@ li {
   position: absolute;
   right: 70px;
   top: 15px;
+  font-family: "Roboto", sans-serif;
 }
 
 .button:hover {
@@ -45,7 +53,8 @@ li {
   );
 }
 
-/* TOP BAR */
+/* SECTION TOP BAR */
+
 .topbar {
   position: relative;
   padding: 40px 20px;
@@ -53,7 +62,9 @@ li {
 }
 
 .topbar-content {
-  width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .topbar::after {
@@ -63,7 +74,6 @@ li {
   top: 0;
   left: 0;
   background-image: url("img/topbar-background-main.jpg");
-  background-size: cover;
   background-attachment: fixed;
   width: 100%;
   height: 100%;
@@ -71,60 +81,56 @@ li {
   z-index: -1;
 }
 
-.topbar-inf,
-.topbar-user,
+.topbar-inf {
+  flex: 2;
+}
+
 .topbar-image {
   flex: 1;
-}
-
-.topbar-user {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.topbar-user-inf {
-  font-size: 16px;
-  width: 60%;
-  padding-top: 30px;
-  font-style: italic;
-}
-
-.topbar-user-photo {
-  background-image: url("img/user.jpg");
-  background-size: cover;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  opacity: 0.8;
 }
 
 .topbar-title {
   font-size: 55px;
 }
 
-.topbar-main-image {
-  background-image: url("img/main-img.png");
-  height: 705px;
-  width: 405px;
-
-  -webkit-box-shadow: 5px 5px 66px -9px rgba(0, 0, 0, 0.719);
-  -moz-box-shadow: 5px 5px 66px -9px rgba(0, 0, 0, 0.719);
-  box-shadow: 5px 5px 66px -9px rgba(0, 0, 0, 0.719);
+.topbar-slogan {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
 }
 
-/* PREVEW APP*/
+.icon-start {
+  margin-left: 10px;
+  font-size: 30px !important;
+}
+
+.topbar-main-image {
+  background-image: url("img/main-image.png");
+  height: 700px;
+  width: 400px;
+  opacity: 0.8;
+  -webkit-mask-image: -webkit-linear-gradient(
+    right,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/*  SECTION PREVEW APP - IMAGE*/
 
 .app-preview {
   width: 100%;
   background-color: #624490f3;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  height: 500px;
+  padding: 0 50px;
   box-sizing: border-box;
-
   position: relative;
 }
 
@@ -141,12 +147,12 @@ li {
   height: 100%;
   opacity: 0.7;
   z-index: -1;
+  box-sizing: border-box;
 }
 
 .preview-element {
   width: 400px;
   height: 400px;
-  background-size: cover;
 }
 
 .preview-element:nth-child(1) {
@@ -165,7 +171,7 @@ li {
   background-image: url(img/element4.png);
 }
 
-/* PLANSZE O PERSONACH */
+/* SECTIONS - PERSON 1,2,3 */
 
 .section-overlay {
   align-items: center;
@@ -178,7 +184,7 @@ li {
   flex: 1;
 }
 
-.section-content-persona2 {
+.content-aligin-persona2 {
   align-items: flex-end;
 }
 
@@ -196,12 +202,10 @@ li {
 
 .section-description {
   font-size: 22px;
-  padding: 20px 30px;
 }
 
 .section-title {
   font-size: 35px;
-  padding: 20px;
   margin-bottom: 30px;
   line-height: 1.5;
 }
@@ -241,7 +245,7 @@ li {
   background-image: url("img/img3.png");
 }
 
-/* PLANSZA STRARTOWA - CO TO, DLA KOGO */
+/* SECTIONS - FOR WHOM, WHAT */
 
 .section-start {
   padding: 60px 0;
@@ -256,12 +260,12 @@ li {
 .section-start-content {
   width: 15vw;
   margin: 20px;
+  flex-wrap: wrap;
 }
 
 .board-icon {
   font-size: 70px !important;
-  color: #ff5722;
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     to bottom,
     #ff6502,
     #ff7614,
@@ -270,15 +274,16 @@ li {
     #ffa042
   );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
+  -webkit-text-fill-color: transparent;
 }
 
-/* style dla planszy CO DAJE FASTFOOD  */
+/* SECTION - RECIPE */
 
 .summary-board {
   padding: 60px 0;
   position: relative;
-  background-color: rgba(84, 49, 143, 0.6);
+  /*background-color: rgba(84, 49, 143, 0.6);*/
+  background-color: rgba(71, 39, 126, 0.5);
 }
 
 .summary-board::after {
@@ -287,8 +292,8 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("img/summary-background.jpg");
-  background-size: cover;
+  /*background-image: url("img/summary-background.jpg");*/
+  background-image: url("img/ananas.jpg");
   background-attachment: fixed;
   width: 100%;
   height: 100%;
@@ -319,9 +324,7 @@ li {
 }
 
 .summary-field {
-  display: flex;
   width: 70vw;
-  display: flex;
   justify-content: space-between;
   align-content: center;
   padding: 20px;
@@ -346,8 +349,8 @@ li {
 }
 
 .summary-data {
-  width: 50vw;
   padding: 45px 0;
+  width: 50vw;
 }
 
 .summary-data-field {
@@ -355,9 +358,12 @@ li {
   width: 50%;
 }
 
-.sumary-data-content {
+.summary-data-content {
   flex: 1;
   border-right: 2px solid #ffa042;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .summary-data-content-name {
@@ -370,27 +376,32 @@ li {
 }
 
 .summary-plan {
-  padding: 40px 0;
-  width: 50%;
+  padding: 0 0;
 }
 
 .summary-plan-list {
   margin-top: 30px;
+  align-content: space-between;
+  justify-content: center;
+  padding-top: 30px;
+  width: 60vw;
 }
 
 .summary-plan-list li {
-  padding-bottom: 20px;
   align-items: center;
+  flex: 1;
+  text-align: center;
 }
 
 .summary-list-icon {
   padding: 20px;
+  margin-bottom: 20px;
   background-color: #ffa042;
   border-radius: 50%;
-  margin-right: 15px;
+  font-size: 70px !important;
 }
 
-/* style dla NEWSLETTERA/FOOTER*/
+/* SECTION NEWSLETTER/FOOTER*/
 
 .footer {
   background-color: #624490e1;
@@ -407,7 +418,6 @@ li {
   left: 0;
   background-image: url("img/drawer-header-bg.jpg");
   background-size: contain;
-  width: 90%;
   background-attachment: fixed;
   width: 100%;
   height: 100%;
@@ -418,17 +428,12 @@ li {
 .panel-mail {
   justify-content: space-evenly;
   align-items: center;
-  width: 35vw;
-  margin-top: 25px;
+  width: 42vw;
+  flex-wrap: wrap;
 }
 
 .newsletter-content {
   letter-spacing: 1px;
-}
-
-.icon-newsletter {
-  margin-right: 20px;
-  font-size: 45px !important;
 }
 
 .newsletter-mail {
@@ -445,7 +450,7 @@ li {
 }
 
 .input-mail-submit {
-  padding: 11px;
+  padding: 8px 30px;
   background-color: #ff5722;
 }
 
@@ -461,7 +466,13 @@ li {
 .input-mail-submit {
   color: #fff;
 }
-/*style wspólne */
+
+/* CONNON STYLE */
+
+.button,
+.input-mail-submit {
+  border-radius: 25px;
+}
 
 .button,
 .topbar-title,
@@ -494,6 +505,7 @@ li {
 .summary-basic-inf-time-field,
 .summary-data,
 .summary-plan-list,
+.summary-plan-list li,
 .section-overlay,
 .section-content,
 .section-field,
@@ -504,7 +516,10 @@ li {
 .newsletter,
 .panel-mail,
 .gallery-field,
-.gallery {
+.gallery,
+.app-preview,
+.summary-field,
+.summary-data-content {
   display: flex;
 }
 
@@ -522,7 +537,6 @@ li {
 .footer,
 .gallery-field,
 .gallery {
-  justify-content: center;
   align-items: center;
 }
 
@@ -537,7 +551,7 @@ li {
 .summary-board,
 .summary-data-field,
 .summary-plan,
-.summary-plan-list,
+.summary-plan-list li,
 .sumary-data-content,
 .summary-basic-inf,
 .section-content,
@@ -549,6 +563,10 @@ li {
   flex-direction: column;
 }
 
+.topbar::after,
+.topbar-main-image,
+.preview-element,
+.summary-board::after,
 .gallery-img,
 .topbar-main-image,
 .section-screen-image {
@@ -561,10 +579,6 @@ li {
   text-align: center;
 }
 
-.greater-text {
-  font-size: 22px;
-}
-
 .small-text {
   font-size: 18px;
 }
@@ -572,4 +586,208 @@ li {
 .white-text {
   color: #eef5f1;
 }
-query
+#slimming {
+  background: #f9f9f9;
+}
+
+#variety {
+  background: #f9f9f9;
+}
+
+#about {
+  background: #ffffff;
+}
+
+#mass {
+  background: #ffffff;
+}
+
+@media only screen and (max-width: 1400px) {
+  * {
+    overflow-x: hidden !important;
+  }
+
+  .app-preview {
+    display: none;
+  }
+
+  .menu-nav li {
+    font-size: 16px;
+  }
+
+  .button {
+    border-radius: 25px;
+    top: 120px;
+    z-index: 100;
+  }
+
+  .section-title {
+    padding: 20px;
+  }
+
+  .input-mail-name,
+  .input-mail-field,
+  .input-mail-submit {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu-nav li {
+    display: none;
+  }
+
+  .menu-nav {
+    padding: 50px;
+  }
+
+  .button {
+    top: 15px;
+  }
+
+  .section-overlay,
+  .summary-field {
+    flex-direction: column;
+  }
+
+  .section-content-persona1,
+  .section-content,
+  .section-content-persona2 {
+    align-items: center;
+  }
+
+  .section-start-field {
+    width: 70vw;
+  }
+
+  .section-overlay-persona2 {
+    flex-direction: column-reverse;
+  }
+
+  .topbar {
+    padding: 40px 20px;
+    width: 100vw;
+    height: 60vh;
+    box-sizing: border-box;
+  }
+
+  .topbar-content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .topbar-inf {
+    flex: 2;
+  }
+
+  .topbar-image {
+    flex: 1;
+    display: none;
+  }
+
+  .topbar-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+  }
+
+  .topbar-slogan {
+    margin-top: 90px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+
+  .section-title {
+    padding: 5px;
+  }
+
+  .summary-board::after {
+    background-image: url("img/ananas-mobile.jpg");
+  }
+
+  .summary-data {
+    width: 70vw;
+  }
+
+  .summary-data {
+    padding: 45px 0;
+  }
+
+  .summary-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .summary-data-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    border: none;
+  }
+
+  .summary-data-content-name {
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .summary-data-content-value {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .summary-basic-inf-description {
+    padding: 10px;
+  }
+
+  .summary-subtitle {
+    padding: 2px;
+    font-size: 16px;
+  }
+
+  .summary-list-icon {
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    background-color: #ffa042;
+    border-radius: 45%;
+    font-size: 20px !important;
+  }
+
+  .summary-plan-list li {
+    font-size: 16px;
+  }
+
+  .section-start-field {
+    flex-direction: column;
+  }
+
+  .section-start-field {
+    width: 100vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .section-start-content {
+    box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .button,
+  .topbar-slogan {
+    border-radius: 25px;
+  }
+
+  .summary-data-field,
+  .summary-plan,
+  .summary-data,
+  .summary-plan-list,
+  .section-title,
+  .section-start-content {
+    width: 90vw;
+  }
+}

@@ -1,536 +1,505 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <title>Fast food</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="hover.css" type="text/css" />
-    <link rel="stylesheet" href="animate.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Libre+Franklin|Lato|Montserrat|Karla|Mukta"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8" />
+  <title>Fast food</title>
 
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="hover.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Montserrat|Mukta" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <body>
-    <!--NAWIGACJA MENU-->
-    <nav>
-      <div class="menu-nav">
-        <a href="#about">
-          <li class="link-hover">
-            O APLIKACJI
-            <i class="material-icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <!--NAWIGACJA MENU-->
+
+  <nav>
+    <div class="menu-nav">
+      <a href="#about">
+        <li class="link-hover">
+          O APLIKACJI
+          <i class="material-icons">
+            keyboard_arrow_down
+          </i>
+        </li>
+      </a>
+      <a href="#slimming">
+        <li class="link-hover">
+          ODCHUDZANIE
+          <i class="material-icons">
+            keyboard_arrow_down
+          </i>
+        </li>
+      </a>
+
+      <a href="#mass">
+        <li class="link-hover">
+          MASA
+          <i class="material-icons">
+            keyboard_arrow_down
+          </i>
+        </li>
+      </a>
+      <a href="#variety">
+        <li class="link-hover">
+          UROZMAICONA DIETA
+          <i class="material-icons">
+            keyboard_arrow_down
+          </i>
+        </li>
+      </a>
+      <a href="#footer">
+        <li class="link-hover">
+          NEWSLETTER
+          <i class="material-icons">
+            keyboard_arrow_down
+          </i>
+        </li>
+      </a>
+
+      <div class="button greater-text white-text">WERSJA PRÓBNA</div>
+    </div>
+  </nav>
+
+  <!---TOPBAR-->
+
+  <div class="topbar">
+    <div class="topbar-content">
+      <div class="topbar-inf">
+        <header>
+          <div class="topbar-title white-text" data-aos="zoom-in">
+            <span>ZDROWO. &nbsp; </span>
+            <span>PYSZNIE. &nbsp; </span>
+            <span>SAMODZIELNIE. </span>
+          </div>
+          <div class="topbar-slogan white-text">
+            <a class="white-text" href="#about">POZNAJ FAST FOODA</a>
+            <i class="material-icons icon-start">
               keyboard_arrow_down
             </i>
-          </li>
-        </a>
-        <a href="#slimming">
-          <li class="link-hover">
-            ODCHUDZANIE
-            <i class="material-icons">
-              keyboard_arrow_down
-            </i>
-          </li>
-        </a>
-
-        <a href="#mass">
-          <li class="link-hover">
-            MASA
-            <i class="material-icons">
-              keyboard_arrow_down
-            </i>
-          </li>
-        </a>
-        <a href="#variety">
-          <li class="link-hover">
-            UROZMAICONA DIETA
-            <i class="material-icons">
-              keyboard_arrow_down
-            </i>
-          </li>
-        </a>
-        <a href="#">
-          <li class="link-hover">
-            NEWSLETTER
-            <i class="material-icons">
-              keyboard_arrow_down
-            </i>
-          </li>
-        </a>
-
-        <div class="button greater-text white-text">WERSJA PRÓBNA</div>
-      </div>
-    </nav>
-
-    <!---TOPBAR-->
-
-    <div class="topbar">
-      <div class="topbar-content">
-        <div class="topbar-inf">
-          <header>
-            <div class="topbar-title white-text">Fast food</div>
-            <div class="topbar-slogan white-text">Jedz i żyj zdrowo</div>
-          </header>
-        </div>
-        <
-        <div class="topbar-image"><img class="topbar-main-image" /></div>
-        <div class="topbar-user">
-          <div class="topbar-user-photo"></div>
-          <div class="topbar-user-inf white-text">
-            "Bardzo dobra aplikacja. Ja jestem z niej w pełni zadowolony. Ma
-            faktycznie bogatą listę produktów a tych których nie ma można sobie
-            samemu dodać. Polecam aplikację w 100%."
           </div>
-        </div>
+        </header>
+      </div>
+      <div class="topbar-image"><img class="topbar-main-image" /></div>
+    </div>
+  </div>
+
+  <!-- APP PREVIEW -->
+
+  <div class="app-preview">
+    <div class="preview-element" data-aos="zoom-in-up"></div>
+    <div class="preview-element" data-aos="zoom-in-up"></div>
+    <div class="preview-element" data-aos="zoom-in-up"></div>
+    <div class="preview-element" data-aos="zoom-in-up"></div>
+  </div>
+
+
+  <!--SECTION FOR WHOM-->
+
+  <div class="section-start" id="about" data-aos="zoom-in-up">
+    <div class="section-title">Dla kogo Fast Food?</div>
+    <div class="section-start-field">
+      <div class="section-start-content">
+        <i class="material-icons board-icon">directions_bike</i>
+        <p class="board-content-efect greater-text">
+          <b>Odchudasz się?</b><br />
+          <span class="small-text">Chciałbyś zrzucić zbędne kilogramy? Znowu lekko i dobrze poczuć
+            się z własną wagą?</span>
+        </p>
+      </div>
+      <div class="section-start-content">
+        <i class="material-icons board-icon">fitness_center</i>
+        <p class="board-content-efect greater-text">
+          <b>Trenujesz, jesteś aktywny?</b> <br />
+          <span class="small-text">Chciałbyś widzieć swoje raporty pokazujące ilość zjedzonych
+            kalorii - system Ci to umożliwi.</span>
+        </p>
+      </div>
+
+      <div class="section-start-content">
+        <i class="material-icons board-icon">pan_tool</i>
+        <p class="board-content-efect greater-text">
+          <b>Jesteś alergikiem?</b> <br />
+          <span class="small-text">Nie martw się. Od dziś możesz jeść bez obaw, ponieważ aplikacja
+            podpowie Ci, na jakie produkty lub dania powinieneś uważać.</span>
+        </p>
       </div>
     </div>
+  </div>
 
-    <div class="app-preview">
-      <div class="preview-element"></div>
-      <div class="preview-element"></div>
-      <div class="preview-element"></div>
-      <div class="preview-element"></div>
+  <!--TWOJA WAGA W TWOICH RĘKACH-->
+
+  <div class="section-overlay section-overlay-persona1" id="slimming">
+    <div class="section-content section-title-field">
+      <div class="section-title slogan">Twoja waga <br />w Twoich rękach</div>
+      <div class="section-subtitle"></div>
+      <img class="section-screen-image screen1" data-aos="zoom-in" />
     </div>
-
-    <!--TWOJA WAGA W TWOICH RĘKACH-->
-
-    <div class="section-overlay section-overlay-persona1" id="slimming">
-      <div class="section-content section-title-field">
-        <div class="section-title slogan">Twoja waga <br />w Twoich rękach</div>
-        <div class="section-subtitle"></div>
-        <img class="section-screen-image screen1" />
-      </div>
-      <div class="section-content">
-        <div class="section-field">
-          <div class="section-queries">
-            <div class="section-title-query">JEŚLI....</div>
-            <li>
-              <i class="material-icons"> check </i>Prowadzisz siedzący tryb
-              życia?
-            </li>
-            <li>
-              <i class="material-icons"> check </i>Twoja aktywność jest bardzo
-              ograniczona?
-            </li>
-            <li>
-              <i class="material-icons">
-                check
-              </i>
-              <b>Chciałbyś zrzucić zbędne kilogramy</b>, ponieważ zdałeś sobie
-              sprawę, że wpływają one nie tylko twoją samoocenę, sylwetkę, ale
-              przede wszystkim na zdrowie?
-            </li>
-            <li>
-              <i class="material-icons">
-                check
-              </i>
-              Chciałbyś wiedzieć, co możesz zjeść, a co powinieneś unikać?
-            </li>
-            <li>
-              <i class="material-icons"> check </i>Nie masz czasu na wizyty u
-              dietetyczki?
-            </li>
-            <li>
-              <i class="material-icons">
-                check
-              </i>
-              Nie chcesz jeść tych samych monotonnych posiłków, które będą Ci
-              ciągle przypominać, że jesteś na diecie?
-            </li>
-          </div>
-
-          <div class="section-description">
-            Dzięki fast foodowi bycie na diecie może być fajne i lekkie.
-            Aplikacja da Ci możliwość, ułożenia samodzielnego planu
-            żywieniowego, z niskokalorycznymi, ale bardzo smacznymi i ciekawymi
-            daniami, które nie będą Cię kusić do złamania diety. Samodzielnie
-            wyliczysz ilość zapotrzebowania kalorycznego, nie martwiąc się, że
-            zjesz ich za dużo. I to wszystko bez siedzenia w długiej kolejce u
-            dietetyka.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- BĄDŹ PANEM SWOJEJ MASY-->
-
-    <div class="section-overlay" id="mass">
-      <div class="section-content section-content-persona2">
-        <div class="section-field">
-          <div class="section-queries">
-            <div class="section-title-query">JEŚLI....</div>
-            <li>
-              <i class="material-icons"> check </i
-              ><b
-                >Jesteś aktywny, dbasz o swoje zdrowie i sylwetkę? A może
-                dopiero zaczynasz swoją przygodę ze sportem?</b
-              >
-            </li>
-            <li>
-              <i class="material-icons">
-                check
-              </i>
-              Chciałbyś w wygodny nieskomplikowany sposób liczyć ilość
-              spożywanych kalorii oraz wartości odżywczych? Ale brak ci
-              kreatywności do tworzenia smacznych posiłków?
-            </li>
-            <li>
-              <i class="material-icons">
-                check
-              </i>
-              Chciałbyś mieć pełny wgląd w swoje szczegółowe statystyki
-              spożytych kaloriii, które będą zaprezentowane w sposób czytelny i
-              estetyczny?
-            </li>
-          </div>
-
-          <div class="section-description">
-            Fast food to aplikacja, która powstała z myślą o osobach, które są
-            aktywne, dbają o swoje zdrowie i sylwetkę albo pragną zmienić coś w
-            swoim dotychczasowym trybie życia. Dzięki temu osoby już aktywne
-            oraz te, które dopiero są na początku swojej przygody ze sportem
-            będą mogły w prosty sposób zaplanować co powinny i w jakiej ilości
-            jeść. Razem z aplikacją ułożysz dietę, która będzie spełniać twoje
-            wymagania na zapotrzebowanie energetyczne, a tym samym zwiększając
-            efekt twoich ćwiczeń.
-          </div>
-        </div>
-      </div>
-      <div class="section-content section-title-field">
-        <div class="section-title slogan">Bądź Panem<br />swojej masy</div>
-        <img class="section-screen-image screen2" />
-      </div>
-    </div>
-
-    <!--NUDNE POSIŁKI TO JUŻ PRZESZŁOŚĆ-->
-
-    <div class="section-overlay section-overlay-persona1" id="variety">
-      <div class="section-content section-title-field">
-        <div class="section-title slogan">
-          Nudne posiłki <br />to już przeszłość
-        </div>
-        <img class="section-screen-image screen3" />
-      </div>
-      <div class="section-content">
-        <div class="section-field">
-          <div class="section-queries">
-            <div class="section-title-query">JEŚLI....</div>
-            <li>
-              <i class="material-icons"> check </i
-              ><b
-                >Jesteś alergikiem lub wege? A może jesteś na diecie
-                zdrowotnej?</b
-              >
-            </li>
-            <li>
-              <i class="material-icons"> check </i>Chciałbyś mieć zróżnicowaną i
-              smaczną dietę, nie martwiąc się, czy dany produkt zawarty w
-              potrawie jest dla Ciebie dozwolony czy nie?
-            </li>
-            <li>
-              <i class="material-icons"> check </i>Chciałbyś mieć gotowe
-              potrawy, do których będziesz mieć dostęp za pomocą jednego
-              kliknięcia?
-            </li>
-            <li>
-              <i class="material-icons">
-                check
-              </i>
-              Chcesz poprawić swój komfort życia, a przy okazji zaoszczędzić
-              czas na szukanie pomysłów w internecie lub książkach?
-            </li>
-            <li>
-              <i class="material-icons"> check </i>Nie masz czasu na wizyty u
-              dietetyczki?
-            </li>
-            <li>
-              <i class="material-icons">
-                check
-              </i>
-              Chcesz uniknąć wyłamania się z diety, ponieważ nie wiesz co zjeść?
-            </li>
-          </div>
-
-          <div class="section-description">
-            Od teraz bycie na diecie zdrowotnej lub z ograniczeniami nie musi
-            być dla Ciebie dużym wyzwaniem. Zarówno osoby będące wege oraz te,
-            które mają problemy zdrowotne, każdego dnia będą mogły mieć
-            zróżnicowaną i smaczną dietę, przy zachowaniu restrykcyjnych zasad
-            żywieniowych. Dzięki możliwości samodzielnego stworzenia planu
-            żywieniowego będziesz jadł to co lubisz. To pozwoli Ci na uniknięcie
-            wyłamania się ze swojej diety.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PLANSZA CO TO JEST FAST FOOD-->
-
-    <div class="section-start" id="about">
-      <div class="section-title">
-        Co daje aplikacja żywieniowa Fast Food?
-      </div>
-
-      <div class="section-start-field">
-        <div class="section-start-content">
-          <i class="material-icons board-icon">watch_later</i>
-          <p class="board-content-efect greater-text">
-            <b>Oszczędzasz czas</b><br />
-            <span class="small-text"
-              >Krótszy czas między półkami w markecie, żadnych kolejek u
-              dietetyka</span
-            >
-          </p>
-        </div>
-
-        <div class="section-start-content">
-          <i class="material-icons board-icon">favorite</i>
-          <p class="board-content-efect greater-text">
-            <b>Jesz to co lubisz.</b><br />
-            <span class="small-text">
-              Cieszysz się pysznym, zdrowym i ulubionym jedzeniem!</span
-            >
-          </p>
-        </div>
-        <div class="section-start-content">
-          <i class="material-icons board-icon">collections_bookmark</i>
-          <p class="board-content-efect greater-text">
-            <b>Nudne posiłki to już przeszłość</b> <br />
-            <span class="small-text"
-              >aplikacja z szeroką bazą produktów/potraw podpowie ci nowe
-              pomysły na obiad!</span
-            >
-          </p>
-        </div>
-
-        <div class="section-start-content">
-          <i class="material-icons board-icon">fastfood</i>
-          <p class="board-content-efect greater-text">
-            <b>Liczenie kalorii staje się przeszłością </b> <br />
-            <span class="small-text">Aplikacja liczy je za ciebie</span>
-          </p>
-        </div>
-
-        <div class="section-start-content">
-          <i class="material-icons board-icon">person_pin</i>
-          <p class="board-content-efect greater-text">
-            <b>Samodzielne układanie diety</b><br />
-            <span class="small-text"> bez ingerencji dietetyka</span>
-          </p>
-        </div>
-
-        <div class="section-start-content">
-          <i class="material-icons board-icon">phone_android</i>
-          <p class="board-content-efect greater-text">
-            <b>Estetyczny wygląd, prosta nieskomplikowana nawigacja </b> <br />
-            <span class="small-text"> każdy się odnajdzie!</span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!--DLA KOGO-->
-
-    <div class="section-start">
-      <div class="section-title">Dla kogo Fast Food?</div>
-      <div class="section-start-field">
-        <div class="section-start-content">
-          <i class="material-icons board-icon">stars</i>
-          <p class="board-content-efect greater-text">
-            <b>Odchudasz się?</b><br />
-            <span class="small-text"
-              >Chciałbyś zrzucić zbędne kilogramy? Znowu lekko i dobrze poczuć
-              się z własną wagą?</span
-            >
-          </p>
-        </div>
-        <div class="section-start-content">
-          <i class="material-icons board-icon">favorite</i>
-          <p class="board-content-efect greater-text">
-            <b>Trenujesz, jesteś aktywny?</b> <br />
-            <span class="small-text"
-              >Chciałbyś widzieć swoje raporty pokazujące ilość zjedzonych
-              kalorii - system ci to umożliwi</span
-            >
-          </p>
-        </div>
-
-        <div class="section-start-content">
-          <i class="material-icons board-icon">watch_later</i>
-          <p class="board-content-efect greater-text">
-            <b>Jesteś alergikiem?</b> <br />
-            <span class="small-text"
-              >Nie martw się. Od dziś możesz jeść bez obaw, ponieważ aplikacja
-              podpowie ci, na jakie produkty/dania powinieneś uważać</span
-            >
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!--CO DAJE FAST FOOD-->
-
-    <div class="summary-board">
-      <div class="section-title section-title-background white-text">
-        Czego się dowiesz z Fast Fooda?
-      </div>
-
-      <div class="summary-basic-inf">
-        <div class="summary-subtitle small-text white-text">
-          Poznasz nowe przepisy na posiłki
-        </div>
-
-        <div class="summary-field">
-          <div class="summary-basic-inf-recipe">
-            <div class="summary-basic-inf-name white-text">
-              Naleśniki z jagodami i nutellą
-            </div>
-            <div class="summary-basic-inf-time-field">
-              <i class="material-icons summary-basic-inf-icon">access_time</i>
-              <span class="summary-basic-inf-time white-text">1 h 30 min</span>
-            </div>
-
-            <div class="summmary-basic-inf-ingredients white-text">
-              <li>1 szklanka mąki pszennej</li>
-              <li>2 jajka</li>
-              <li>1 szklanka mleka</li>
-              <li>3/4 szklanki wody (najlepiej gazowanej)</li>
-              <li>szczypta soli</li>
-              <li>3 łyżki masła lub oleju roślinnego</li>
-            </div>
-          </div>
-
-          <div class="summary-basic-inf-description white-text">
-            <p>
-              Mąkę wsypać do miski, dodać jajka, mleko, wodę i sól. Zmiksować na
-              gładkie ciasto. Dodać roztopione masło lub olej roślinny i razem
-              zmiksować (lub wykorzystać tłuszcz do smarowania patelni przed
-              smażeniem każdego naleśnika).
-            </p>
-
-            <p>
-              Naleśniki smażyć na dobrze rozgrzanej patelni z cienkim dnem np.
-              naleśnikowej. Przewrócić na drugą stronę gdy spód naleśnika będzie
-              już ładnie zrumieniony i ścięty.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="summary-data-field">
-        <div>
-          <span class="summary-subtitle small-text white-text"
-            >Dowiesz się, ile i czego spożyłeś</span
-          >
-        </div>
-        <div class="summary-data">
-          <div class="sumary-data-content">
-            <span class="summary-data-content-name white-text"
-              >Energia, kcal</span
-            >
-            <span class="summary-data-content-value white-text">1 234</span>
-          </div>
-
-          <div class="sumary-data-content">
-            <span class="summary-data-content-name white-text">Białka, g</span>
-            <span class="summary-data-content-value white-text">260</span>
-          </div>
-
-          <div class="sumary-data-content">
-            <span class="summary-data-content-name white-text"
-              >Węglowodany, g</span
-            >
-            <span class="summary-data-content-value white-text">345</span>
-          </div>
-
-          <div class="sumary-data-content">
-            <span class="summary-data-content-name white-text"
-              >Tłuszcze, g</span
-            >
-            <span class="summary-data-content-value white-text">560</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="summary-plan">
-        <div>
-          <span class="summary-subtitle small-text white-text"
-            >Twoje plany żywieniowe</span
-          >
-        </div>
-
-        <div class="summary-plan-list white-text">
+    <div class="section-content">
+      <div class="section-field">
+        <div class="section-queries">
+          <div class="section-title-query">CZY...</div>
           <li>
-            <i class="material-icons summary-list-icon white-text">
-              fastfood
-            </i>
-            Plan na masę
+            <i class="material-icons"> check </i>Prowadzisz siedzący tryb
+            życia?
           </li>
           <li>
-            <i class="material-icons summary-list-icon white-text">
-              favorite_border
-            </i>
-            Plan na odchudzanie
+            <i class="material-icons"> check </i>Twoja aktywność jest bardzo
+            ograniczona?
           </li>
           <li>
-            <i class="material-icons summary-list-icon white-text">
-              grade
+            <i class="material-icons">
+              check
             </i>
-            Plan na lato
+            <b>Chciałbyś zrzucić zbędne kilogramy</b>, ponieważ zdałeś sobie
+            sprawę, że wpływają one nie tylko twoją samoocenę, sylwetkę, ale
+            przede wszystkim na zdrowie?
           </li>
+          <li>
+            <i class="material-icons">
+              check
+            </i>
+            Chciałbyś wiedzieć, co możesz zjeść, a co powinieneś unikać?
+          </li>
+          <li>
+            <i class="material-icons"> check </i>Nie masz czasu na wizyty u
+            dietetyczki?
+          </li>
+          <li>
+            <i class="material-icons">
+              check
+            </i>
+            Nie chcesz jeść tych samych monotonnych posiłków, które będą Ci
+            ciągle przypominać, że jesteś na diecie?
+          </li>
+        </div>
+
+        <div class="section-title-query">WYPRÓBUJ FAST FOODA</div>
+
+        <div class="section-description" data-aos="fade-left">
+          Dzięki fast foodowi bycie na diecie może być fajne i lekkie.
+          Aplikacja da Ci możliwość, ułożenia samodzielnego planu
+          żywieniowego, z niskokalorycznymi, ale bardzo smacznymi i ciekawymi
+          daniami, które nie będą Cię kusić do złamania diety. Samodzielnie
+          wyliczysz ilość zapotrzebowania kalorycznego, nie martwiąc się, że
+          zjesz ich za dużo. I to wszystko bez siedzenia w długiej kolejce u
+          dietetyka.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BĄDŹ PANEM SWOJEJ MASY-->
+
+  <div class="section-overlay section-overlay-persona2" id="mass">
+    <div class="section-content content-aligin-persona2">
+      <div class="section-field ">
+        <div class="section-queries ">
+          <div class="section-title-query">CZY...</div>
+          <li>
+            <i class="material-icons"> check </i><b>Jesteś aktywny, dbasz o swoje zdrowie i sylwetkę? A może
+              dopiero zaczynasz swoją przygodę ze sportem?</b>
+          </li>
+          <li>
+            <i class="material-icons">
+              check
+            </i>
+            Chciałbyś w wygodny nieskomplikowany sposób liczyć ilość
+            spożywanych kalorii oraz wartości odżywczych? Ale brak Ci
+            kreatywności do tworzenia smacznych posiłków?
+          </li>
+          <li>
+            <i class="material-icons">
+              check
+            </i>
+            Chciałbyś mieć pełny wgląd w swoje szczegółowe statystyki
+            spożytych kaloriii, które będą zaprezentowane w sposób czytelny i
+            estetyczny?
+          </li>
+        </div>
+
+        <div class="section-title-query">WYPRÓBUJ FAST FOODA</div>
+
+        <div class="section-description" data-aos="fade-right">
+          Fast food to aplikacja, która powstała z myślą o tych osobach, które
+          są aktywne, dbają o swoje zdrowie i sylwetkę albo pragną zmienić coś
+          w swoim dotychczasowym trybie życia. Dzięki temu osoby już aktywne
+          oraz te, które dopiero są na początku swojej przygody ze sportem
+          będą mogły w prosty sposób zaplanować co powinny i w jakiej ilości
+          jeść. Razem z aplikacją ułożysz dietę, która będzie spełniać Twój
+          wymagania na zapotrzebowanie energetyczne, a tym samym zwiększając
+          efekt twoich ćwiczeń.
+        </div>
+      </div>
+    </div>
+    <div class="section-content section-title-field">
+      <div class="section-title slogan">Bądź Panem<br />swojej masy</div>
+      <img class="section-screen-image screen2" data-aos="zoom-in" />
+    </div>
+  </div>
+
+  <!--NUDNE POSIŁKI TO JUŻ PRZESZŁOŚĆ-->
+
+  <div class="section-overlay section-overlay-persona1" id="variety">
+    <div class="section-content section-title-field">
+      <div class="section-title slogan">
+        Nudne posiłki <br />to już przeszłość
+      </div>
+      <img class="section-screen-image screen3" data-aos="zoom-in" />
+    </div>
+    <div class="section-content">
+      <div class="section-field">
+        <div class="section-queries">
+          <div class="section-title-query">CZY...</div>
+          <li>
+            <i class="material-icons"> check </i><b>Jesteś alergikiem lub wege? A może jesteś na diecie
+              zdrowotnej?</b>
+          </li>
+          <li>
+            <i class="material-icons"> check </i>Chciałbyś mieć zróżnicowaną i
+            smaczną dietę, nie martwiąc się, czy dany produkt zawarty w
+            potrawie jest dla Ciebie dozwolony czy nie?
+          </li>
+          <li>
+            <i class="material-icons"> check </i>Chciałbyś mieć gotowe
+            potrawy, do których będziesz mieć dostęp za pomocą jednego
+            kliknięcia?
+          </li>
+          <li>
+            <i class="material-icons">
+              check
+            </i>
+            Chcesz poprawić swój komfort życia, a przy okazji zaoszczędzić
+            czas na szukanie pomysłów w internecie lub książkach?
+          </li>
+          <li>
+            <i class="material-icons"> check </i>Nie masz czasu na wizyty u
+            dietetyczki?
+          </li>
+          <li>
+            <i class="material-icons">
+              check
+            </i>
+            Chcesz uniknąć wyłamania się z diety, ponieważ nie wiesz co zjeść?
+          </li>
+        </div>
+
+        <div class="section-title-query">WYPRÓBUJ FAST FOODA</div>
+
+        <div class="section-description" data-aos="fade-left">
+          Od teraz bycie na diecie zdrowotnej lub z ograniczeniami nie musi
+          być dla Ciebie dużym wyzwaniem. Zarówno osoby będące wege oraz te,
+          które mają problemy zdrowotne, każdego dnia będą mogły mieć
+          zróżnicowaną i smaczną dietę, przy zachowaniu restrykcyjnych zasad
+          żywieniowych. Dzięki możliwości samodzielnego stworzenia planu
+          żywieniowego będziesz jadł to co lubisz. Bez ryzyka czy dany produkt
+          lub potrawa jest dla Ciebie dozwolona.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION WHAT-->
+
+  <div class="section-start" data-aos="zoom-in-up">
+    <div class="section-title">
+      Co daje aplikacja żywieniowa Fast Food?
+    </div>
+
+    <div class="section-start-field">
+      <div class="section-start-content">
+        <i class="material-icons board-icon">access_time</i>
+        <p class="board-content-efect greater-text">
+          <b>Oszczędzasz czas</b><br />
+          <span class="small-text">Krótszy czas między półkami w markecie, żadnych kolejek u
+            dietetyka.</span>
+        </p>
+      </div>
+
+      <div class="section-start-content">
+        <i class="material-icons board-icon">favorite_border</i>
+        <p class="board-content-efect greater-text">
+          <b>Jesz to co lubisz</b><br />
+          <span class="small-text">
+            Cieszysz się pysznym, zdrowym i ulubionym jedzeniem!</span>
+        </p>
+      </div>
+      <div class="section-start-content">
+        <i class="material-icons board-icon">event_available</i>
+        <p class="board-content-efect greater-text">
+          <b>Nudne posiłki to już przeszłość</b> <br />
+          <span class="small-text">aplikacja z szeroką bazą produktów i potraw podpowie Ci nowe
+            pomysły na obiad!</span>
+        </p>
+      </div>
+
+      <div class="section-start-content">
+        <i class="material-icons board-icon">settings</i>
+        <p class="board-content-efect greater-text">
+          <b>Liczenie kalorii staje się przeszłością. </b> <br />
+          <span class="small-text">Aplikacja liczy je za Ciebie.</span>
+        </p>
+      </div>
+
+      <div class="section-start-content">
+        <i class="material-icons board-icon">person_pin</i>
+        <p class="board-content-efect greater-text">
+          <b>Samodzielne układanie diety</b><br />
+          <span class="small-text"> Bez ingerencji dietetyka.</span>
+        </p>
+      </div>
+
+      <div class="section-start-content">
+        <i class="material-icons board-icon">phone_android</i>
+        <p class="board-content-efect greater-text">
+          <b>Estetyczny wygląd, prosta nieskomplikowana nawigacja </b> <br />
+          <span class="small-text"> Każdy się odnajdzie!</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--SECTION RECIPE-->
+
+  <div class="summary-board">
+    <div class="section-title white-text">
+      Czego się dowiesz z Fast Fooda?
+    </div>
+
+    <div class="summary-basic-inf">
+      <div class="summary-subtitle small-text white-text">
+        Poznasz nowe przepisy na posiłki
+      </div>
+
+      <div class="summary-field">
+        <div class="summary-basic-inf-recipe">
+          <div class="summary-basic-inf-name white-text">
+            Koktajl z ananasa
+          </div>
+          <div class="summary-basic-inf-time-field">
+            <i class="material-icons summary-basic-inf-icon">access_time</i>
+            <span class="summary-basic-inf-time white-text">1 h 30 min</span>
+          </div>
+
+          <div class="summmary-basic-inf-ingredients white-text" data-aos="fade-right">
+            <li>1/2 ananasa)</li>
+            <li>1 banan</li>
+            <li>1 pomarańcza</li>
+            <li>1 szklanka zimnego mleka</li>
+            <li>kilka kostek lodu</li>
+            <li>opcjonalnie: likier kokosowy</li>
+          </div>
+        </div>
+
+        <div class="summary-basic-inf-description white-text" data-aos="fade-left">
+          <p>
+            Obranego ananasa pokroić na mniejsze kawałki i dodać do blendera.
+            Z pomarańczy wycisnąć sok do blendera albo wrzucić ją obraną
+            pokrojoną na mniejsze cząstki (jednak biała skórka na pomarańczy
+            może nadać koktajlowi lekko gorzkiego smaku). Dodać pokrojonego
+            banana oraz mleko i całość zmiksować.
+          </p>
         </div>
       </div>
     </div>
 
-    <footer>
-      <div class="footer">
-        <div class="newsletter">
-          <div class="newletter-icon">
-            <i class="material-icons icon-newsletter">
-              mail
-            </i>
-          </div>
-          <div class="newsletter-content greater-text">
-            <p>
-              Testuj fastfooda za darmo, sprawdź jego możliwości i ciesz się
-              samodzielną łatwością układania diety dla Ciebie
-            </p>
-            <p class="newsletter-mail greater-text">
-              Zostaw swojego maila. Zapisz się do Newslettera
-            </p>
-          </div>
+    <div class="summary-data-field">
+      <div>
+        <span class="summary-subtitle small-text white-text">Dowiesz się, ile i czego spożyłeś</span>
+      </div>
+      <div class="summary-data">
+        <div class="summary-data-content">
+          <span class="summary-data-content-name white-text">Energia, kcal</span>
+          <span class="summary-data-content-value white-text">146</span>
         </div>
 
-        <div class="panel">
-          <form action="#" class="panel-mail">
-            <label class="input-mail-name" for="mail">E-mail:</label>
-            <input
-              type="text"
-              id="mail"
-              name="email"
-              placeholder="Wpisz swojego maila"
-              class="input-mail-field"
-            />
+        <div class="summary-data-content">
+          <span class="summary-data-content-name white-text">Białka, g</span>
+          <span class="summary-data-content-value white-text">10</span>
+        </div>
 
-            <div
-              class="input-mail-submit btn-hover"
-              type="submit"
-              value="Submit"
-            >
-              WYŚLIJ
-            </div>
-          </form>
+        <div class="summary-data-content">
+          <span class="summary-data-content-name white-text">Węglowodany, g</span>
+          <span class="summary-data-content-value white-text">0.5</span>
+        </div>
+
+        <div class="summary-data-content">
+          <span class="summary-data-content-name white-text">Tłuszcze, g</span>
+          <span class="summary-data-content-value white-text">0.3</span>
         </div>
       </div>
-    </footer>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+    <div class="summary-plan">
+      <div>
+        <span class="summary-subtitle small-text white-text">Poznasz wiele planów żywieniowych</span>
+      </div>
+
+      <div class="summary-plan-list white-text">
+        <li data-aos="zoom-in-up">
+          <i class="material-icons summary-list-icon white-text">
+            battery_charging_full
+          </i>
+          Plan wspomagający koncentrację
+        </li>
+        <li data-aos="zoom-in-up">
+          <i class="material-icons summary-list-icon white-text">
+            fitness_center
+          </i>
+          Plan na masę
+        </li>
+        <li data-aos="zoom-in-up">
+          <i class="material-icons summary-list-icon white-text">
+            directions_run
+          </i>
+          Plan na odchudzanie
+        </li>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION NEWSLETTER/FOOTER-->
+
+  <footer>
+    <div class="footer" id="footer">
+      <div class="newsletter">
+        <div class="newsletter-content greater-text">
+          <p>
+            Już wkrótce przedstawimy Ci aplikację dzięki, której samodzielne
+            układanie diety stanie się łatwe i przyjemne.
+          </p>
+          <p class="newsletter-mail greater-text">
+            BĄDŹ PIERWSZYM TESTEREM I SPRAWDŹ MOŻLIWOŚCI FAST FOODA ZA DARMO
+          </p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <form action="#" class="panel-mail">
+          <label class="input-mail-name" for="mail">E-mail:</label>
+          <input type="text" id="mail" name="email" placeholder="Wpisz swojego maila" class="input-mail-field" />
+
+          <div class="input-mail-submit btn-hover" type="submit" value="Submit">
+            WYŚLIJ
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="jquery.scroll-reveal"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
